@@ -53,7 +53,7 @@ export DISPLAY=:99
 ```
 
 Capture rendered output from the virtual display with ImageMagick (`import -window <id>`)
-or record video with `ffmpeg -f x11grab -video_size 800x600 -i :99.0+0+0 ...`. The Cursor
+or record video with `ffmpeg -f x11grab -video_size 1280x720 -i :99.0+0+0 ...`. The Cursor
 `computerUse`/`RecordScreen` tools cannot see the Xvfb `:99` display.
 
 ### Tests
