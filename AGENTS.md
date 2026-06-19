@@ -45,7 +45,8 @@ Most examples open a GLFW window and present a swapchain, so they need an X disp
 
 ```bash
 export XDG_RUNTIME_DIR=/tmp/xdg-runtime && mkdir -p "$XDG_RUNTIME_DIR" && chmod 700 "$XDG_RUNTIME_DIR"
-Xvfb :99 -screen 0 1280x720x24 -ac +extension GLX +render -noreset &   # start once
+Xvfb :99 -screen 0 1280x720x24 -ac +extension GLX +render -noreset &
+sleep 1
 export DISPLAY=:99
 ./bin/Debug/ClearScreenWithColor        # windowed; loops until window close / ESC
 ./bin/Debug/GetDeviceInfo               # console only, exits on its own
